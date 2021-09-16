@@ -8,14 +8,10 @@ body {
     display: flex;
     flex-direction: column;
     background-color: red;
-    max-width: 1400px;
-}
-
-.content {
-    height: 100%;
     margin: 0 auto;
-    max-width: 1335px;
-    margin: 0px 115px 60px 115px;
+    max-width: 1170px;
+
+
 }
 
 .main {
