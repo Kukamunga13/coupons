@@ -7,7 +7,6 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: red;
     margin: 0 auto;
     max-width: 1170px;
 
@@ -19,9 +18,7 @@ body {
 }
 
 .header {
-    max-width: 1168px;
     max-height: 125px;
-    background-color: aqua;
     display: flex;
     align-items: center;
     padding: 32px 0px;
@@ -97,6 +94,20 @@ a {
     width: 16px;
     height: 22px;
     margin: 13px 17px 15px;
+}
+
+.main__wrapper {
+    background-color: #E5E5E5;
+}
+
+.banner {
+    background-color: #001BA5;
+    color: white;
+    max-height: 290px;
+}
+
+.banner__icon {
+
 }
 
 
