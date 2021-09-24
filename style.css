@@ -99,18 +99,22 @@ a {
     margin: 13px 17px 15px;
 }
 
-.main__wrapper {
-    background-color: #E5E5E5;
-}
-
 .banner {
     background-color: #001BA5;
     color: white;
-    max-height: 290px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner__title {
 }
 
 .banner__icon {
-
+    width: 30px;
+    height: 14px;
 }
 
 
