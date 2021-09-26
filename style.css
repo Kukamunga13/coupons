@@ -109,7 +109,11 @@ a {
     flex-direction: column;
 }
 
-.banner__title {
+h2 {
+    font-family: HelveticaNeueCyr;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
 }
 
 .banner__icon {
