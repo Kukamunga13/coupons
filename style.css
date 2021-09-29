@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    font-style: normal;
+    font-weight: 700;
+}
+
 body {
     height: 100%;
-    font-family: "HelveticaNeueCyr";
 }
 
 .wrapper {
@@ -104,21 +109,29 @@ a {
     color: white;
     height: 290px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
+.banner__title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -40px;
+}
+
 h2 {
-    font-family: HelveticaNeueCyr;
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
 }
 
 .banner__icon {
-    width: 30px;
-    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
 
