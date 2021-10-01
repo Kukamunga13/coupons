@@ -1,11 +1,19 @@
 @font-face {
-    font-family: "HelveticaNeueCyr";
-    font-style: normal;
+    font-family: 'HelveticaNeueCyr';
+    src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot');
+    src: local('HelveticaNeueCyr-Light'),
+        url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff') format('woff'),
+        url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf') format('truetype');
     font-weight: 700;
+    font-style: normal;
 }
+
 
 body {
     height: 100%;
+    font-family: 'HelveticaNeueCyr';
+    /*background-color: #E5E5E5;*/
 }
 
 .wrapper {
@@ -14,12 +22,14 @@ body {
     flex-direction: column;
     margin: 0 auto;
     max-width: 1170px;
-
-
 }
 
 .main {
     flex: 1 1 auto;
+}
+
+.header__wrapper {
+    background-color: #FAFAFA;
 }
 
 .header {
@@ -56,11 +66,6 @@ body {
     margin-right: 16px;
 }
 
-li:last-child a {
-    color: red;
-}
-
-
 .li__img {
     display: inline;
     margin-left: 4px;
@@ -82,13 +87,12 @@ a {
     border-radius: 3px;
 }
 
-.search__inpute {
+.search__input {
     width: 405px;
     height: 100%;
     border: none;
-    padding: 0;
+    padding: 0 0 0 20px;
     outline: none;
-    margin-left: 20px;
 }
 
 .icon-wrapper {
@@ -110,6 +114,7 @@ a {
     height: 290px;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .banner__title {
