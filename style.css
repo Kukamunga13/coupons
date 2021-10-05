@@ -168,4 +168,5 @@ h3 {
 .card-first {
     background-image: url("img/banner1.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
