@@ -187,6 +187,20 @@ h3 {
     margin: 0 20px 16px;
 }
 
+.slider__logo {
+    width: 104px;
+    height: 80px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 90px 140px -10px 140px
+}
+
+.slider__img {
+    width: 60px;
+    height: 21.05px;
+    margin: 29px 22px;
+}
+
 .card-first {
     background-image: url("img/banner1.png");
     background-repeat: no-repeat;
