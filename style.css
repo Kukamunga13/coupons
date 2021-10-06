@@ -202,7 +202,13 @@ h3 {
 }
 
 .card-first {
-    background-image: url("img/banner1.png");
+    background-image: url("img/slider/banner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-second {
+    background-image: url(img/slider/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
