@@ -192,13 +192,16 @@ h3 {
     height: 80px;
     background: #FFFFFF;
     border-radius: 4px;
-    margin: 90px 140px -10px 140px
+    margin: 90px 140px -10px 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider__img {
-    width: 60px;
-    height: 21.05px;
-    margin: 29px 22px;
+    /*width: 60px;*/
+    /*height: 21.05px;*/
+    /*margin: 29px 22px;*/
 }
 
 .card-first {
