@@ -155,7 +155,7 @@ h3 {
 
 .slider__cards {
     display: flex;
-    margin-top: 34px;
+    margin: 34px -8px 0;
 }
 
 .slider__card {
@@ -163,6 +163,31 @@ h3 {
     flex-direction: column-reverse;
     width: 378px;
     height: 250px;
+    border-radius: 4px;
+    position: relative;
+    padding: 0 8px;
+}
+
+.slider__card:last-child:after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background: white url("img/slider/sliderNext.svg") no-repeat center center;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 360px;
+    top: 100px;
+}
+
+
+.slider__background {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.slider__img-background {
     border-radius: 4px;
 }
 
@@ -196,16 +221,4 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/*.card-first {*/
-/*    background-image: url("img/slider/banner1.png");*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-
-.card-second {
-    background-image: url(img/slider/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
