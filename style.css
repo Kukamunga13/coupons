@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'HelveticaNeueCyr', sans-serif, Serif;
+    font-family: 'HelveticaNeueCyr';
     src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot');
     src: local('HelveticaNeueCyr-Light'),
         url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'HelveticaNeueCyr', sans-serif, Serif;
+    font-family: 'HelveticaNeueCyr';
     src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot');
     src: local('HelveticaNeueCyr-Medium'),
         url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot?#iefix')format('embedded-opentype'),
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: 'HelveticaNeueCyr' , sans-serif, Serif;
+    font-family: 'HelveticaNeueCyr';
     src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot');
     src: local('HelveticaNeueCyr-Light'),
     url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot?#iefix')format('embedded-opentype'),
@@ -33,7 +33,7 @@
 
 body {
     height: 100%;
-    font-family: 'HelveticaNeueCyr';
+    font-family: 'HelveticaNeueCyr', sans-serif, Serif;
     /*background-color: #E5E5E5;*/
 }
 
@@ -81,12 +81,12 @@ body {
     font-size: 12px;
     font-weight: 500;
     margin-right: 16px;
+    text-transform: uppercase;
 }
 
 .li__img {
     display: inline;
     margin-left: 4px;
-    margin-right: 338px;
     width: 4px;
     height: 18px;
 }
