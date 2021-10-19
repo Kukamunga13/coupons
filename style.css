@@ -79,33 +79,40 @@ a {
 }
 
 .header__search {
-    max-width: 455px;
+    max-width: 442px;
     height: 50px;
     display: inline-flex;
     align-items: center;
-    border: 1px solid #E0E0E0;
-    border-radius: 3px;
 }
 
 .search__input {
     width: 405px;
     height: 100%;
-    border: none;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
     padding: 0 0 0 20px;
     outline: none;
 }
 
 .icon-wrapper {
-    border-radius: 0px 3px 3px 0px;
-    border: none;
     background: #F13D37;
-    margin-left: -18px;
+    border-top: 1px solid #F13D37;
+    border-right: 1px solid #F13D37;
+    border-bottom: 1px solid #F13D37;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+
 }
 
 .header__search-icon {
-    width: 16px;
-    height: 22px;
-    margin: 13px 17px 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner {
