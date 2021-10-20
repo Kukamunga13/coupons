@@ -148,7 +148,7 @@ h2 {
     margin-top: 60px;
 }
 
-.slider__main-logo {
+.title {
     font-size: 22px;
     margin: 0;
 }
@@ -223,4 +223,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*купоны*/
+.coupons {
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    height: 1342px;
+    margin-top: 60px;
 }
