@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Title</title>
 </head>
@@ -47,57 +48,89 @@
                     <div class="slider__main-title title">
                         Лучшие предложения магазинов-партнёров
                     </div>
-                    <div class="slider__cards">
-                        <div class="slider__card">
-                            <div class="slider__background">
-                                <img class="slider_background-img" src="img/slider/banner1.png" alt="Ой,изображение сломалось(">
-                            </div>
-                            <div class="slider__info">
-                                <div class="slider__title">
-                                    goods
-                                </div>
-                                <div class="slider__text">
-                                    Quiksilver: скидка 5% на все при оплате картой
-                                </div>
-                            </div>
-                            <div class="slider__logo">
-                                <img class="slider__logo-img" src="img/slider/sliderlogo.png">
-                            </div>
-                        </div>
-                        <div class="slider__card">
-                            <div class="slider__background">
-                                <img class="slider__background-img" src="img/slider/bg.png" alt="Ой,изображение сломалось(">
-                            </div>
-                            <div class="slider__info">
-                                <div class="slider__title">
-                                    Aliexpress
-                                </div>
-                                <div class="slider__text">
-                                    -1000 рублей на первый заказ
+
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider__card">
+                                    <div class="slider__background">
+                                        <img class="slider_background-img" src="img/slider/banner1.png" alt="Ой,изображение сломалось(">
+                                    </div>
+                                    <div class="slider__info">
+                                        <div class="slider__title">
+                                            goods
+                                        </div>
+                                        <div class="slider__text">
+                                            Quiksilver: скидка 5% на все при оплате картой
+                                        </div>
+                                    </div>
+                                    <div class="slider__logo">
+                                        <img class="slider__logo-img" src="img/slider/sliderlogo.png">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="slider__logo">
-                                <img class="slider__logo-img" src="img/slider/slideraAli.png">
-                            </div>
-                        </div>
-                        <div class="slider__card">
-                            <div class="slider__background">
-                                <img class="slider__background-img" src="img/slider/Bg2.png" alt="Ой,изображение сломалось(">
-                            </div>
-                            <div class="slider__info">
-                                <div class="slider__title">
-                                    iherb
+                            <div class="swiper-slide">
+                                <div class="slider__card">
+                                    <div class="slider__background">
+                                        <img class="slider__background-img" src="img/slider/bg.png" alt="Ой,изображение сломалось(">
+                                    </div>
+                                    <div class="slider__info">
+                                        <div class="slider__title">
+                                            Aliexpress
+                                        </div>
+                                        <div class="slider__text">
+                                            -1000 рублей на первый заказ
+                                        </div>
+                                    </div>
+                                    <div class="slider__logo">
+                                        <img class="slider__logo-img" src="img/slider/slideraAli.png">
+                                    </div>
                                 </div>
-                                <div class="slider__text">
-                                    -10% на спортивное питание Muscletech!
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__card">
+                                    <div class="slider__background">
+                                        <img class="slider__background-img" src="img/slider/Bg2.png" alt="Ой,изображение сломалось(">
+                                    </div>
+                                    <div class="slider__info">
+                                        <div class="slider__title">
+                                            iherb
+                                        </div>
+                                        <div class="slider__text">
+                                            -10% на спортивное питание Muscletech!
+                                        </div>
+                                    </div>
+                                    <div class="slider__logo">
+                                        <img class="slider__logo-img" src="img/slider/sliderlogo.png">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="slider__logo">
-                                <img class="slider__logo-img" src="img/slider/sliderlogo.png">
+                            <div class="swiper-slide">
+                                <div class="slider__card">
+                                    <div class="slider__background">
+                                        <img class="slider__background-img" src="img/slider/Bg2.png" alt="Ой,изображение сломалось(">
+                                    </div>
+                                    <div class="slider__info">
+                                        <div class="slider__title">
+                                            iherb
+                                        </div>
+                                        <div class="slider__text">
+                                            -10% на спортивное питание Muscletech!
+                                        </div>
+                                    </div>
+                                    <div class="slider__logo">
+                                        <img class="slider__logo-img" src="img/slider/sliderlogo.png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+
                 <div class="coupons">
                     <div class="coupons__title title">
                         Промокоды и купоны
@@ -119,5 +152,8 @@
                 <p>Футер</p>
             </footer>
     </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>
