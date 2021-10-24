@@ -261,3 +261,24 @@ footer {
     height: 1342px;
     margin-top: 60px;
 }
+
+.coupons__cards {
+    margin: 30px -9px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100%;
+}
+
+.coupons__column {
+    max-width: 220px;
+    padding: 0 9px;
+}
+
+.coupons__card {
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    width: 220px;
+    height: 290px;
+    margin-bottom: 20px;
+}
