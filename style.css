@@ -213,11 +213,6 @@ a {
     overflow: hidden;
     border-radius: 4px;
 }
-footer {
-    max-width: 1170px;
-    margin: 0 auto;
-}
-
 
 .slider__info {
     height: 94px;
@@ -281,4 +276,39 @@ footer {
     width: 220px;
     height: 290px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coupons__logo {
+    width: 126px;
+    height: 70px;
+    margin: 25px 47px;
+}
+
+.coupons__discount {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #F13D37;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 12px;
+}
+
+
+.coupons__info {
+    padding-top: 25px;
+    border-top: 1px solid #EEEEEE;
+}
+
+footer {
+    max-width: 1170px;
+    margin: 0 auto;
 }
