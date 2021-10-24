@@ -278,6 +278,7 @@ a {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .coupons__logo {
@@ -300,6 +301,8 @@ a {
     font-weight: 700;
     font-style: normal;
     line-height: 12px;
+    top: 107px;
+    left: 150px;
 }
 
 
