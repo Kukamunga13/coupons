@@ -172,7 +172,10 @@ a {
 }
 
 .title {
+    font-weight: 700;
+    font-style: normal;
     font-size: 22px;
+    line-height: 27pxpx;
     margin: 0;
 }
 
@@ -232,7 +235,6 @@ a {
 .slider__text {
     font-size: 16px;
     font-weight: 550;
-
     line-height: 20px;
     margin: 0 20px 16px;
 }
@@ -270,6 +272,14 @@ a {
     padding: 0 9px;
 }
 
+.coupons__column .coupons__title {
+    color: #2D81FF;
+}
+
+.coupons__column:nth-child(even) .coupons__title {
+    color: #46AE2C;
+}
+
 .coupons__card {
     border: 1px solid #EEEEEE;
     border-radius: 5px;
@@ -305,10 +315,46 @@ a {
     left: 150px;
 }
 
-
 .coupons__info {
-    padding-top: 25px;
+    padding: 25px 20px 13px;
     border-top: 1px solid #EEEEEE;
+}
+
+.coupons__title {
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.coupons__text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.coupons__btn {
+    box-sizing: border-box;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    border: 1px solid #2D81FF;
+    border-radius: 3px;
+    max-width: 180px;
+    max-height: 45px;
+    margin: 0 20px 25px;
+    padding: 15px 35px;
+    white-space: nowrap;
+    color: #2D81FF;
+}
+
+.coupons__column:nth-child(even) .coupons__btn {
+    color: #46AE2C;
+    border-color: #46AE2C;
 }
 
 footer {
