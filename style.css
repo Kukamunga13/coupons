@@ -191,7 +191,7 @@ a {
     height: 250px;
     border-radius: 4px;
     position: relative;
-    padding: 0 8px;
+    padding: 0 9px;
 }
 
 .slider__card:last-child:after {
@@ -371,6 +371,65 @@ a {
     padding: 17px 0;
     cursor: pointer;
 }
+
+/*Нижний слайдер*/
+
+.slider-bottom {
+    max-width: 1170px;
+    height: 170px;
+    margin-top: 60px;
+}
+
+.slider-bottom__cards {
+    display: flex;
+    margin: 30px -9px 0;
+}
+
+.slider-bottom__card {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 9px;
+    width: 180px;
+    height: 112px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+}
+
+.slider-bottom__card:last-child:after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background: white url("img/slider/sliderNext.svg") no-repeat center center;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 152px;
+    top: 32px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+
+
+.slider-bottom__logo {
+    margin: 28px 50px 20px;
+    width: 80px;
+    height: 28px;
+}
+
+.slider-bottom__info {
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 20px 20px;
+}
+
 
 footer {
     max-width: 1170px;
