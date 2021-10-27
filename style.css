@@ -9,14 +9,36 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot');
+    src: local('HelveticaNeueCyr-Medium'),
+        url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot?#iefix')format('embedded-opentype'),
+        url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot');
+    src: local('HelveticaNeueCyr-Light'),
+    url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot?#iefix')format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff') format('woff'),
+    url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 html {
     height: 100%;
 }
 
 body {
     height: 100%;
-    font-family: 'HelveticaNeueCyr';
-    /*background-color: #E5E5E5;*/
+    font-family: 'HelveticaNeueCyr', sans-serif, Serif;
+    background-color: #E5E5E5;
 }
 
 .wrapper {
@@ -31,11 +53,9 @@ body {
     flex: 1 1 auto;
 }
 
-.header__wrapper {
-    background-color: #FAFAFA;
-}
-
 .header {
+    max-width: 1170px;
+    margin: 0 auto;
     max-height: 125px;
     display: flex;
     align-items: center;
@@ -43,9 +63,7 @@ body {
 }
 
 .header__logo {
-    max-width: 172px;
     margin-right: 16px;
-
 }
 
 .header__logo-piсture {
@@ -58,21 +76,21 @@ body {
 }
 
 .list {
-   padding: 0px;
+    padding: 0px;
     list-style-type: none;
 }
 
-.list__item {
+.header__item {
     display: inline;
     font-size: 12px;
-    font-weight: 103;
+    font-weight: 500;
     margin-right: 16px;
+    text-transform: uppercase;
 }
 
 .li__img {
     display: inline;
     margin-left: 4px;
-    margin-right: 338px;
     width: 4px;
     height: 18px;
 }
@@ -82,33 +100,39 @@ a {
 }
 
 .header__search {
-    max-width: 455px;
+    max-width: 442px;
     height: 50px;
     display: inline-flex;
     align-items: center;
-    border: 1px solid #E0E0E0;
-    border-radius: 3px;
 }
 
 .search__input {
     width: 405px;
     height: 100%;
-    border: none;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
     padding: 0 0 0 20px;
     outline: none;
 }
 
 .icon-wrapper {
-    border-radius: 0px 3px 3px 0px;
-    border: none;
     background: #F13D37;
-    margin-left: -18px;
+    border-top: 1px solid #F13D37;
+    border-right: 1px solid #F13D37;
+    border-bottom: 1px solid #F13D37;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
 }
 
 .header__search-icon {
-    width: 16px;
-    height: 22px;
-    margin: 13px 17px 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner {
@@ -129,7 +153,7 @@ a {
     margin-bottom: -40px;
 }
 
-h2 {
+.banner__txt {
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
@@ -142,5 +166,277 @@ h2 {
     margin-bottom: 24px;
 }
 
+/*slider*/
+.slider {
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    height: 310px;
+    margin-top: 60px;
+}
+
+.title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0;
+}
+
+.slider__cards {
+    display: flex;
+    margin: 34px -8px 0;
+}
+
+.slider__card {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 378px;
+    height: 250px;
+    border-radius: 4px;
+    position: relative;
+    padding: 0 9px;
+}
+
+.slider__card:last-child:after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background: white url("img/slider/sliderNext.svg") no-repeat center center;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 360px;
+    top: 100px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
 
 
+.slider__background {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.slider__info {
+    height: 94px;
+    background: rgba(32, 42, 37, 0.6);
+    border-radius: 0px 0px 4px 4px;
+    color: #FFFFFF;
+}
+
+.slider__title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 16px 314px 6px 20px;
+    text-transform: uppercase;
+}
+
+.slider__text {
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 20px;
+    margin: 0 20px 16px;
+}
+
+.slider__logo {
+    width: 104px;
+    height: 80px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 90px 140px -10px 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*купоны*/
+.coupons {
+    max-width: 1170px;
+    height: 1342px;
+    margin-top: 60px;
+}
+
+.coupons__cards {
+    margin: 30px -9px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100%;
+}
+
+.coupons__column {
+    max-width: 220px;
+    padding: 0 9px;
+}
+
+.coupons__column .coupons__title {
+    color: #2D81FF;
+}
+
+.coupons__column:nth-child(even) .coupons__title {
+    color: #46AE2C;
+}
+
+.coupons__card {
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    max-width: 220px; /*217 тогда пиксель пёрфект*/
+    height: 290px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #FFFFFF
+}
+
+.coupons__logo {
+    width: 126px;
+    height: 70px;
+    margin: 25px 47px;
+}
+
+.coupons__discount {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #F13D37;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 12px;
+    top: 107px;
+    left: 150px;
+}
+
+.coupons__info {
+    padding: 25px 20px 13px;
+    border-top: 1px solid #EEEEEE;
+}
+
+.coupons__title {
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.coupons__text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.coupons__btn {
+    box-sizing: border-box;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    border: 1px solid #2D81FF;
+    border-radius: 3px;
+    max-width: 180px;
+    max-height: 45px;
+    margin: 0 20px 25px;
+    padding: 15px 35px;
+    white-space: nowrap;
+    color: #2D81FF;
+    cursor: pointer;
+}
+
+.coupons__column:nth-child(even) .coupons__btn {
+    color: #46AE2C;
+    border-color: #46AE2C;
+}
+
+.coupons__btn-bottom {
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 12px;
+    border: 1px solid #9D9D9D;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    padding: 17px 0;
+    cursor: pointer;
+}
+
+/*Нижний слайдер*/
+
+.slider-bottom {
+    max-width: 1170px;
+    height: 170px;
+    margin-top: 60px;
+}
+
+.slider-bottom__cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px -9px 0;
+}
+
+.slider-bottom__card {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 9px;
+    width: 180px;
+    height: 112px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+}
+
+.slider-bottom__card:last-child:after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background: white url("img/slider/sliderNext.svg") no-repeat center center;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 152px;
+    top: 32px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+
+
+.slider-bottom__logo {
+    margin: 28px 50px 20px;
+    width: 80px;
+    height: 28px;
+}
+
+.slider-bottom__info {
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 20px 20px;
+}
+
+
+footer {
+    max-width: 1170px;
+    margin: 0 auto;
+}
