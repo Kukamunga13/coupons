@@ -54,6 +54,10 @@ body {
 }
 
 .header {
+    background:  #FAFAFA;
+}
+
+.header__wrapper {
     max-width: 1170px;
     margin: 0 auto;
     max-height: 125px;
