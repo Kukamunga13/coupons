@@ -31,10 +31,14 @@
     font-style: normal;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     height: 100%;
     font-family: 'HelveticaNeueCyr', sans-serif, Serif;
-    /*background-color: #E5E5E5;*/
+    background-color: #E5E5E5;
 }
 
 .wrapper {
@@ -50,6 +54,10 @@ body {
 }
 
 .header {
+    background: #FAFAFA;
+}
+
+.header__wrapper {
     max-width: 1170px;
     margin: 0 auto;
     max-height: 125px;
@@ -93,6 +101,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #444444;
 }
 
 .header__search {
@@ -172,7 +181,10 @@ a {
 }
 
 .title {
+    font-weight: 700;
+    font-style: normal;
     font-size: 22px;
+    line-height: 27px;
     margin: 0;
 }
 
@@ -188,7 +200,7 @@ a {
     height: 250px;
     border-radius: 4px;
     position: relative;
-    padding: 0 8px;
+    padding: 0 9px;
 }
 
 .slider__card:last-child:after {
@@ -213,11 +225,6 @@ a {
     overflow: hidden;
     border-radius: 4px;
 }
-footer {
-    max-width: 1170px;
-    margin: 0 auto;
-}
-
 
 .slider__info {
     height: 94px;
@@ -237,7 +244,6 @@ footer {
 .slider__text {
     font-size: 16px;
     font-weight: 550;
-
     line-height: 20px;
     margin: 0 20px 16px;
 }
@@ -255,9 +261,284 @@ footer {
 
 /*купоны*/
 .coupons {
-    display: flex;
-    flex-direction: column;
     max-width: 1170px;
     height: 1342px;
     margin-top: 60px;
+}
+
+.coupons__cards {
+    margin: 30px -9px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100%;
+}
+
+.coupons__column {
+    max-width: 220px;
+    padding: 0 9px;
+}
+
+.coupons__column .coupons__title {
+    color: #2D81FF;
+}
+
+.coupons__column:nth-child(even) .coupons__title {
+    color: #46AE2C;
+}
+
+.coupons__card {
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    max-width: 220px; /*217 тогда пиксель пёрфект*/
+    height: 290px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #FFFFFF
+}
+
+.coupons__logo {
+    width: 126px;
+    height: 70px;
+    margin: 25px 47px;
+}
+
+.coupons__discount {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #F13D37;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 12px;
+    top: 107px;
+    left: 150px;
+}
+
+.coupons__info {
+    padding: 25px 20px 13px;
+    border-top: 1px solid #EEEEEE;
+}
+
+.coupons__title {
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.coupons__text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.coupons__btn {
+    box-sizing: border-box;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    border: 1px solid #2D81FF;
+    border-radius: 3px;
+    max-width: 180px;
+    max-height: 45px;
+    margin: 0 20px 25px;
+    padding: 15px 35px;
+    white-space: nowrap;
+    color: #2D81FF;
+    cursor: pointer;
+}
+
+.coupons__column:nth-child(even) .coupons__btn {
+    color: #46AE2C;
+    border-color: #46AE2C;
+}
+
+.coupons__btn-bottom {
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 12px;
+    border: 1px solid #9D9D9D;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    padding: 17px 0;
+    cursor: pointer;
+}
+
+/*Нижний слайдер*/
+
+.slider-bottom {
+    max-width: 1170px;
+    height: 170px;
+    margin-top: 60px;
+}
+
+.slider-bottom__cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px -9px 0;
+}
+
+.slider-bottom__card {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 9px;
+    width: 180px;
+    height: 112px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+}
+
+.slider-bottom__card:last-child:after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background: white url("img/slider/sliderNext.svg") no-repeat center center;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 152px;
+    top: 32px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+
+
+.slider-bottom__logo {
+    margin: 28px 50px 20px;
+    width: 80px;
+    height: 28px;
+}
+
+.slider-bottom__info {
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 20px 20px;
+}
+
+
+footer {
+    background: #363F50;
+    margin-top: 90px;
+}
+
+.footer__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+
+.footer__logo {
+    margin-right: 30px;
+    margin-top: -10px;
+}
+
+.footer__logo-piсture {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__info {
+    margin-left: 30px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__menu {
+    width: 100%;
+}
+
+.footer__list {
+    display: flex;
+    margin: 0 -5px 20px;
+}
+
+.footer__item {
+    display: inline;
+    margin: 0 5px 0 5px;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.footer__item a {
+    color: #FFFFFF;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 10px;
+    font-style: normal;
+    line-height: 15px;
+    color: #9D9D9D;
+    max-width: 500px;
+}
+
+.footer__title {
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer__mail {
+    max-width: 351px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer__input {
+    width: 241px;
+    height: 100%;
+    border-radius: 3px 0 0 3px;
+    padding: 0 0 0 15px;
+    border: none;
+    outline: none;
+}
+
+.footer__btn {
+    font-weight: 700;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #F13D37;
+    cursor: pointer;
+    padding: 16px 15px;
+    border-radius: 0 3px 3px 0;
 }
